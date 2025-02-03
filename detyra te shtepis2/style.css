@@ -1,0 +1,38 @@
+*{
+    margin:0 ;
+    padding-left: 0;
+    box-sizing: border-box;
+} 
+img{
+    width: 150px;
+    height: 150px;
+}
+ul li{
+display: inline-block;
+}
+section{
+    color: aqua;
+    background-color: blue;
+    height:25vh;
+    width: 25vw;
+}
+.riga{
+    background-color: blueviolet;
+    border: 2px dotted black;
+}
+nav{
+    margin-left: 900px;
+}
+header{
+    background-color: bisque;
+} 
+aside{
+    background-color: brown;
+    color: blanchedalmond;
+    display: inline-block;
+    margin-left: 900px;
+}
+.zoe{
+    margin-top: 5px;
+    border: 2px solid black;
+}

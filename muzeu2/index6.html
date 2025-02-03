@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+    <header>
+        <h1>Muzeu Ndërkombëtar i Kosovës</h1>
+        <nav>
+            <ul>
+                <li><a href="index1.html">Ballina</a></li>
+                <li><a href="index2.html">Historia</a></li>
+                <li><a href="index3.html">Publikime</a></li>
+                <li><a href="index4.html">Evente</a></li>
+                <li><a href="index5.html">Kontakti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="bileta" class="section">
+        <div class="container">
+            <h2>Blerja e Biletave</h2>
+            <form action="#" method="post">
+                <label for="emri">Emri:</label>
+                <input type="text" id="emri" name="emri" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="data">Data e vizitës:</label>
+                <input type="date" id="data" name="data" required>
+
+                <label for="numri-biletave">Numri i biletave:</label>
+                <input type="number" id="numri-biletave" name="numri-biletave" min="1" required>
+
+                <button type="submit">Bli Biletat</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

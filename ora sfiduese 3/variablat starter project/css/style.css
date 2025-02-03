@@ -1,0 +1,142 @@
+/* Krijoni variablat globale  dhe vendosni ne vendet e pa plotsuara ku eshte komenti vendos variablen dhe krijoni  pamjen e kerkuar ne foto*/
+:root {
+  --background-page: #ecf0f1;
+  --border-color: #3498db;
+  --font-family: 'Roboto', sans-serif;
+  --card-width: 400px;
+  --card-height: 500px;
+  --card-background: #ffffff;
+  --text-primary: #2c3e50;
+  --text-secondary: #2980b9;
+  --text-paragraph: #7f8c8d;
+  --link-color: #e74c3c;
+  --link-hover-color: #c0392b;
+  --padding-card: 1.5em;
+  --hover-background: #f7f7f7;
+  --hover-text-primary: #34495e;
+  --hover-border-color: #8e44ad;
+  --hover-link-color: #d35400;
+  --hover-link-svg-color: #e67e22;
+}
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .page-contain {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-page);/*vendos variablen*/
+    border: .75em solid  var(--border-color) ;/*vendos variablen*/
+    padding: 2em;
+    font-family:var(--font-family) ;/*vendos variablen*/
+  }
+  
+  .data-card {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--card-width)   ;/*vendos variablen*/
+    min-height:  var(--card-height)   ;/*vendos variablen*/
+    overflow: hidden;
+    border-radius: .5em;
+    text-decoration: none;
+    background:var(--card-background) ;/*vendos variablen*/
+    margin: 1em;
+    padding: var(--padding-card);
+    box-shadow: 0 1.5em 2.5em -.5em rgba(0, 0, 0, .1);
+    transition: transform .45s ease, background .45s ease;
+  }
+  
+  .data-card h3 {
+    color:   var(--text-primary);/*vendos variablen*/
+    font-size: 3.5em;
+    font-weight: 600;
+    line-height: 1;
+    padding-bottom: .5em;
+    margin: 0 0 0.142857143em;
+    border-bottom: 2px solid var(--text-secondary);/*vendos variablen*/
+    transition: color .45s ease, border .45s ease;
+  }
+  
+  .data-card h4 {
+    color:var(--text-secondary) ;/*vendos variablen*/
+    text-transform: uppercase;
+    font-size: 1.125em;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    margin: 0 0 1.777777778em;
+    transition: color .45s ease;
+  }
+  
+  .data-card p {
+    opacity: 0;
+    color: var(--text-paragraph);/*vendos variablen*/
+    font-weight: 600;
+    line-height: 1.8;
+    margin: 0 0 1.25em;
+    transform: translateY(-1em);
+    transition: opacity .45s ease, transform .5s ease;
+  }
+  
+  .data-card .link-text {
+    display: block;
+    color: var(--link-color);/*vendos variablen*/
+    font-size: 1.125em;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: auto 0 0;
+    transition: color .45s ease;
+  }
+  
+  .data-card .link-text svg {
+    margin-left: .5em;
+    transition: transform .6s ease;
+  }
+  
+  .data-card .link-text svg path {
+    transition: fill .45s ease;
+  }
+  
+  .data-card:hover {
+    background: var(--hover-background);;/*vendos variablen*/
+    transform: scale(1.02);
+  }
+  
+  .data-card:hover h3 {
+    color: var(--hover-text-primary); /* vendos variablen */
+    border-bottom-color: var(--hover-border-color); /* vendos variablen */
+  }
+  
+  .data-card:hover h4 {
+    color: var(--hover-text-primary); /* vendos variablen */
+  }
+  
+  .data-card:hover p {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .data-card:hover .link-text {
+    color:var(--hover-link-color); ;/*vendos variablen*/
+  }
+  
+  .data-card:hover .link-text svg {
+    animation: point 1.25s infinite alternate;
+  }
+  
+  .data-card:hover .link-text svg path {
+    fill: var(--hover-border-color);;/*vendos variablen*/
+  }
+  
+  @keyframes point {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(.125em);
+    }
+  }
+  

@@ -1,0 +1,17 @@
+h1{
+    border: 5px solid red;
+    background-color: blue;
+    color: white;
+    margin: 10px;
+}
+p{
+    width: 600px;
+    height: 400px;
+    border: 2px dotted black;
+    background-color: yellow;
+    margin-top: 50px;
+}
+a{
+    background-color:orange ;
+    border-bottom: 5px dotted black;
+}

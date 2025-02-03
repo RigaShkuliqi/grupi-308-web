@@ -1,0 +1,35 @@
+label{
+    display: block;
+}
+.riga{
+    background-color: blue;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+}
+div{
+    background-color: darkblue;
+    display: inline-block;
+    float:left;
+}
+form{
+    float: right;
+}
+.zoe{
+    color: grey;
+}
+h1{
+    color: white;
+}
+p{
+    color: white;
+}
+body{
+    background-color: darkblue;
+}
+.ZOE2{
+    background-color: white;
+    margin-left: 300px;
+}

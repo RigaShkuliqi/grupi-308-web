@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Muzeu Ndërkombëtar i Kosovës</h1>
+            <img src="./assets/hynesha_ne_fron-removebg-preview.png" alt="">
+            <nav>
+                <ul>
+                    <li><a href="#informata">Informata</a></li>
+                    <li><a href="#publikime">Publikime</a></li>
+                    <li><a href="#evente">Evente</a></li>
+                    <li><a href="#bileta">Blerja e Biletave</a></li>
+                    <li><a href="#kontakti">Kontakti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="informata" class="section">
+            <div class="container">
+                <h2>Informata të Përgjithshme</h2>
+                <p>Muzeu Ndërkombëtar i Kosovës ofron një udhëtim unik përmes historisë dhe kulturës së pasur të Kosovës. Që nga themelimi i tij, muzeu ka qenë një qendër për promovimin e trashëgimisë kulturore.</p>
+            </div>
+        </section>
+
+        <section id="publikime" class="section">
+            <div class="container">
+                <h2>Publikime</h2>
+                <ul>
+                    <li><a href="#">Lajm: Ekspozita e re hapet këtë muaj</a></li>
+                    <li><a href="#">Artikull: Rëndësia e ruajtjes së trashëgimisë kulturore</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="evente" class="section">
+            <div class="container">
+                <h2>Evente</h2>
+                <p>Shikoni ngjarjet dhe ekspozitat e ardhshme:</p>
+                <ul>
+                    <li><strong>20 Janar 2025</strong>: Ekspozita "Trashëgimia e Kosovës"</li>
+                    <li><strong>15 Shkurt 2025</strong>: Workshop mbi artin tradicional</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="bileta" class="section">
+            <div class="container">
+                <h2>Blerja e Biletave</h2>
+                <form action="#" method="post">
+                    <label for="emri">Emri:</label>
+                    <input type="text" id="emri" name="emri" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="data">Data e vizitës:</label>
+                    <input type="date" id="data" name="data" required>
+
+                    <label for="numri-biletave">Numri i biletave:</label>
+                    <input type="number" id="numri-biletave" name="numri-biletave" min="1" required>
+
+                    <button type="submit">Bli Biletat</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="kontakti" class="section">
+            <div class="container">
+                <h2>Kontakti</h2>
+                <form action="#" method="post">
+                    <label for="mesazhi">Mesazhi juaj:</label>
+                    <textarea id="mesazhi" name="mesazhi" rows="5" required></textarea>
+
+                    <button type="submit">Dërgo</button>
+                </form>
+                <p>Email: info@muzeukosove.com | Telefon: +383 49 123 456</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Muzeu Ndërkombëtar i Kosovës. Të gjitha të drejtat e rezervuara.</p>
+        </div>
+    </footer>
+</body>
+</html>

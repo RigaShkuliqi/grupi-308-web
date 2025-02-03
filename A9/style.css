@@ -1,0 +1,24 @@
+p{
+    background-color: aqua;
+}
+h1{
+    background-color: blue ;
+}
+/* inline nxen vend sa i duhet dhe blok e nxen krejt reshtin */
+img{
+   width: 100px;
+   height: auto;
+}
+body{
+    background-color: bisque;
+}
+div{
+    background-color: aquamarine;
+}
+a{
+    color: red;
+}
+span{
+    background-color: blueviolet;
+    font-size: 50px;
+}

@@ -1,0 +1,20 @@
+table{
+    border: 2px solid;
+    border-collapse: collapse;
+ }
+tr, td, th{
+    border: 2px solid;
+    border-collapse: collapse;
+}
+.riga{
+    background-color: red;
+}
+.zoe{
+    background-color: orange;
+}
+.riga2{
+    background-color: mediumspringgreen;
+}
+.zoe2{
+    background-color: yellow;
+}

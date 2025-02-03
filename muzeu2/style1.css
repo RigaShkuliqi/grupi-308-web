@@ -1,0 +1,387 @@
+body {
+    font-family: "Roboto", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+/* Përdorimi i një fonti të thjeshtë dhe të lexueshëm */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    position: relative;
+    color: white;
+    height: 350px; /* Header më i vogël */
+    background: linear-gradient(135deg, #ffffff, #F5F5DC);
+    animation: fadeInHeader 2s ease-in-out;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Imazhet e slideshow-it */
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.mySlides img {
+    width: 100%; /* Foto që mbulojnë të gjithë hapësirën */
+    height: auto;
+    object-fit: cover;
+}
+
+/* Animacioni për kalimin e imazheve */
+@keyframes fadeInImage {
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Animacion për header */
+@keyframes fadeInHeader {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Përmbajtja e header-it */
+.header-content {
+    position: absolute;
+    bottom: 30px; /* Pozita më e ulët e tekstit */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Menuja e navigimit */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5vw;
+}
+
+nav ul li a {
+    color: #A9A9A9;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2vw;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #CD7F32;
+}
+
+nav ul li a::after {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 0;
+    background: #CD7F32;
+    transition: width 0.4s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* 
+header {
+    background: #7c98aa;
+    color: black;
+    padding: 1rem 0;
+    text-align: center;
+    animation: slideDown 1s ease-out;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    font-weight: 800;
+    font-size: medium;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+nav ul li a:hover {
+    color: #ffa500;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+} */
+
+#hero {
+    text-align: center;
+    padding: 2rem;
+    background: #333;
+    color: #fff;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 1rem;
+}
+
+footer {
+    text-align: center;
+    background: #222;
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 40rem;
+}
+
+.button {
+    background: grey;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background: gray;
+    transform: scale(1.1);
+}
+.arkefakte > div {
+    transition: transform 0.5s ease;
+}
+
+.arkefakte > div:hover {
+    transform: translateY(-10px) rotate(5deg);
+}
+
+ .photo-grid{
+    background-image: url("./images/muzeu4.jpg");
+    height: 100vh;
+    background-size: cover;
+    width: 97vw;
+    opacity: 0.7;
+ }
+ .photo-grid h1{
+    /* color: white; */
+    width: 30vw;
+    gap: 50;
+    position: relative;
+    top: 20vh;
+    font-weight: 1000;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    font-size: large;
+    margin-left: 100px;
+ }
+.photo-grid p{
+    /* color: white; */
+    width: 30vw;
+    font-weight: 800;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    margin-left: 100px;
+    margin-top: 200px;
+}
+@media (max-width: 1023px){ 
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    #hero {
+        padding: 1rem;
+    }
+
+    #gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+@media (max-width: 768px){ 
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    #hero {
+        padding: 1rem;
+    }
+
+    #gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #2d2d2d;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    flex-wrap: wrap;
+}
+
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ff6600;
+}
+
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.social-links li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+    color: #ff6600;
+}
+
+
+.footer-bottom {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.footer-logo {
+    max-width: 150px; 
+    height: auto;
+    margin-bottom: 20px; 
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    .footer-logo {
+        max-width: 120px; 
+        margin-bottom: 15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,15 @@
+div{
+    background-color: aqua;
+    width: 300px;
+    display: inline-block;
+    margin-left: 100px;
+}
+.c1{
+    margin-top: 50px;
+}
+body{
+    background-color: rgb(57, 179, 179);
+ }
+ p{
+    padding-top: 20px;
+ }

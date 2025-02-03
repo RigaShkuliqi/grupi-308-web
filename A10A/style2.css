@@ -1,0 +1,25 @@
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    margin-left: 800px;
+    border: 5px solid blueviolet;
+}
+.box2{
+    width: 200px;
+    height:200px ;
+    background-color: bisque;
+    margin-left: 200px;
+    border: 5px solid blueviolet;
+}
+.box3{
+    width: 200px;
+    height:200px ;
+     background-color:violet;
+    margin-left:100%;
+    border: 5px solid blueviolet;
+}
+h1{
+    text-align: center;
+    padding: top;
+}

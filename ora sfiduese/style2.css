@@ -1,0 +1,11 @@
+div{
+    color: pink;
+    background-color:black  ;
+    display: inline-block;
+}
+ol{
+    padding-left: 50px;
+}
+ul{
+    padding-left: 50px;
+}

@@ -1,0 +1,9 @@
+div{
+    border: 3px solid;
+    overflow: scroll;
+    width: 500px;
+    height: 500px;
+}
+img{
+    position: fixed;
+}
